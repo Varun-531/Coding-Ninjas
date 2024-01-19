@@ -11,7 +11,7 @@ public class Solution {
 			if(i%2==0){
 				for(int j =0;j<rows;j++){
 					System.out.print(mat[j][i]+" ");
-				}
+			}
 			}
 			if(i%2!=0){
 				for(int j =rows-1;j>=0;j--){
