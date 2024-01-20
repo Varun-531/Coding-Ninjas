@@ -1,3 +1,4 @@
+package JAVA.Operators;
 import java.util.*;
 public class NumberSeq {
 	public static void main(String[] args) {

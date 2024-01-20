@@ -1,3 +1,4 @@
+package JAVA.Strings;
 public class Solution {
 	public static void printSubstrings(String str) {
 		//Your code goes here

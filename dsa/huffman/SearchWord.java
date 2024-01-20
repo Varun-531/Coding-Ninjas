@@ -1,3 +1,4 @@
+package DSA.huffman;
 /*
 Implement the function SearchWord for the Trie class.
 

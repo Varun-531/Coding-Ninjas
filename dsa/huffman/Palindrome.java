@@ -1,3 +1,4 @@
+package DSA.huffman;
 /*
 Given 'n' number of words, you need to find if there exist any two words which can be joined to make a palindrome or any word, which itself is a palindrome.
 The function should return either true or false. You don't have to print anything.

@@ -1,3 +1,4 @@
+package DSA.huffman;
 /*
 You are given the Trie class with following functions -
 

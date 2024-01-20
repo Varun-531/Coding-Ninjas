@@ -1,3 +1,4 @@
+package DSA.Trees;
 public class Solution {
 
 	/*	TreeNode structure 

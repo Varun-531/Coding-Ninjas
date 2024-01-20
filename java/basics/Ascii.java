@@ -1,3 +1,4 @@
+package JAVA.Basics;
 import java.util.*;
 public class Ascii {
     public static int calculateASCII(char ch){

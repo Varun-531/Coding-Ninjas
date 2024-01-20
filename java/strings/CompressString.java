@@ -1,3 +1,4 @@
+package JAVA.Strings;
 public class Solution {
     public static String getCompressedString(String str) {
         int num = 0;

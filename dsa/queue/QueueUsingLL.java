@@ -1,3 +1,4 @@
+package DSA.Queue;
 /*
 	Following is the structure of the node class for a Singly Linked List
 

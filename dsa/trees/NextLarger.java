@@ -1,3 +1,4 @@
+package DSA.Trees;
 /*
 Given a generic tree and an integer n. Find and return the node with next larger element in the Tree i.e. find a node with value just greater than n.
 Return NULL if no node is present with value greater than n.

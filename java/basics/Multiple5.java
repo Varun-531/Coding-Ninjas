@@ -1,3 +1,4 @@
+package JAVA.Basics;
 import java.util.Scanner;
 
 public class Multiple5 {

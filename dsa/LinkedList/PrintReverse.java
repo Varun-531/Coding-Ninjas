@@ -1,3 +1,4 @@
+package DSA.LinkedList;
 /*
 
 	Following is the Node class already written for the Linked List

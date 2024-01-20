@@ -1,3 +1,4 @@
+package JAVA.Operators;
 import java.util.Scanner;
 
 public class AllPrime {

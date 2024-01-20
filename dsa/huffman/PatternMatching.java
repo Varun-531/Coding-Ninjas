@@ -1,3 +1,4 @@
+package DSA.huffman;
 /*
 Given a list of n words and a pattern p that we want to search. Check if the pattern p is present the given words or not. Return true if the pattern is present and false otherwise.
 Input Format :

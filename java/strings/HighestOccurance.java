@@ -1,3 +1,4 @@
+package JAVA.Strings;
 public class Solution {
 
     public static char highestOccuringChar(String str) {

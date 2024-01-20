@@ -1,3 +1,4 @@
+package DSA.Recursion;
 public class Solution {
 
 	public static int sum(int input[]) {

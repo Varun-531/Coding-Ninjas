@@ -1,3 +1,4 @@
+package JAVA.Basics;
 import java.util.*;
 public class Remark {
     public static void remarkStudent(int score) {

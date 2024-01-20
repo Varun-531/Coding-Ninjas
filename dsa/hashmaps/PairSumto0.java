@@ -1,3 +1,4 @@
+package DSA.hashmaps;
 import java.util.*;
 
 public class Solution {

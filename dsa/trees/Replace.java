@@ -1,3 +1,4 @@
+package DSA.Trees;
 /*
 In a given Generic Tree, replace each node with its depth value. You need to just update the data of each node, no need to return or print anything.
 Input format :

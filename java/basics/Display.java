@@ -1,3 +1,4 @@
+package JAVA.Basics;
 public class Solution {
     public static void printDisplayMessage() {
         // Write your code here

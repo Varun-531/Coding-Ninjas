@@ -1,3 +1,4 @@
+package JAVA.Strings;
 public class Solution {
 	public static String reverseWordWise(String input) {
 		// Write your code here

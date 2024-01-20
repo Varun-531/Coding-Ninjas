@@ -1,3 +1,4 @@
+package DSA.Trees;
 /*
 Given a generic tree, count and return the number of leaf nodes present in the given tree.
 Input format :

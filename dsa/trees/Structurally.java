@@ -1,3 +1,4 @@
+package DSA.Trees;
 /*
 Given two Generic trees, return true if they are structurally identical i.e. they are made of nodes with the same values arranged in the same way.
 Input format :
