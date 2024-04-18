@@ -1,1 +1,3 @@
 *.class
+# add node modules as for gitignore
+node_modules
