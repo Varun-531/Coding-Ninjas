@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <title>React App</title>
+    <style>
+      .form-container {
+        margin: 20px;
+      }
+      .table-container {
+        margin: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const { useState } = React;
+
+      const Form = ({ addStudent }) => {
+        const [name, setName] = useState('');
+        const [marks, setMarks] = useState('');
+
+        const handleSubmit = (e) => {
+          e.preventDefault();
+          if (name && marks) {
+            addStudent({ name, marks });
+            setName('');
+            setMarks('');
+          }
+        };
+
+        return (
+          <div className="form-container">
+            <form onSubmit={handleSubmit}>
+              <input 
+                type="text" 
+                placeholder="Student Name" 
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+              />
+              <input 
+                type="number" 
+                placeholder="Obtained Marks" 
+                value={marks}
+                onChange={(e) => setMarks(e.target.value)}
+                required
+              />
+              <button type="submit">Add Student</button>
+            </form>
+          </div>
+        );
+      };
+
+      const Result = ({ students }) => (
+        <div className="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Student's name</th>
+                <th>Marks</th>
+              </tr>
+            </thead>
+            <tbody>
+              {students.map((student, index) => (
+                <tr key={index}>
+                  <td>{student.name}</td>
+                  <td>{student.marks}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+
+      const App = () => {
+        const [students, setStudents] = useState([]);
+
+        const addStudent = (student) => {
+          setStudents((prevStudents) => [...prevStudents, student]);
+        };
+
+        return (
+          <>
+            <Form addStudent={addStudent} />
+            <Result students={students} />
+          </>
+        );
+      };
+
+      const rootElement = ReactDOM.createRoot(document.getElementById("root"));
+      rootElement.render(<App />);
+    </script>
+  </body>
+</html>
